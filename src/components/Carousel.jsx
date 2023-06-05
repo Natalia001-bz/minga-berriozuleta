@@ -3,8 +3,8 @@ import atras from '/assets/images/atras.png'
 
 export default function Carousel({character_photo, cover_photo,name,description}) {
   return (
-    <main className='flex justify-between flex-wrap hidden lg:block  '>
-        <div className='h-[265px] bg-orange rounded-md flex items-center relative ml-10 mr-10 mt-[50px]'>
+    <main className='flex justify-between  hidden lg:block '>
+        <div className='h-[265px] bg-orange rounded-md flex items-center relative ml-10 mr-10 mt-10'>
           <img className=' ml-10 h-[280px] w-[250px] absolute' src={character_photo} alt='imagen1'></img>
           <img className=' ml-[27%] -mt-[60px] h-[274px] w-[169px] absolute' src={cover_photo} alt='imagen2'></img>
           <img className=' ml-2 h-10 absolute' src={atras} alt='previously'></img>

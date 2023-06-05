@@ -3,8 +3,8 @@ import love from '/assets/images/mingalove.png'
 
 export default function Welcome() {
   return (
-    <div>
-      <img className='  w-screen  h-screen  object-cover object-center ' src={fondo} alt='background'></img>
+    <div >
+      <img className='  w-screen  h-screen  object-cover object-center  ' src={fondo} alt='background'></img>
       <div className=" flex flex-col inset-y-1/2 absolute justify-center items-center  lg:items-start  lg:ml-20 text-center text-white  md:ml-[15%]">
         <h1 className=' ml-4 mr-4 lg:ml-0 font-poppins  text-4xl mb-3  font-bold lg:text-[64px] lg:font-bolder tracking-[-.075em] lg: tracking-[0em]  '>For the love of manga</h1>
         <h5 className='lg:pb-5 font-poppins text-lg lg:text-[35px] mb-3 lg:pb-2 '>Explore our varieties</h5>
