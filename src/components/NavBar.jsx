@@ -5,7 +5,7 @@ import menu from '/assets/images/menu.png'
 
 export default function NavBar() {
   return (
-    <nav className='flex flex-col lg:items-start items-center relative'>
+    <nav className='flex flex-col lg:items-start items-center relative '>
        
         <div className='flex h-full w-full justify-between absolute'>
           <img className='w-17 h-16 mt-6 lg:mt-8 ml-2 lg:ml-10' src={menu} alt='menu'></img>
