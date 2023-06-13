@@ -16,7 +16,7 @@ export default function Footer() {
       <div className=' flex  mt-3 lg:mt-18 items-center  flex justify-between mb-2  items-center ml-2  mr-2  '>
         <div className='flex flex-col ml-4 lg:flex-row lg:ml-20'>
           <a className=" font-poppins lg:text-xl lg:ml-4 " >Home</a>
-          <a className="font-poppins lg:text-xl lg:ml-16" >Mangas</a>
+          <a className="font-poppins lg:text-xl lg:ml-10" >Mangas</a>
         </div>
         <button className=' '> <img className=" h-6 w-25 mr-4 block lg:hidden" src={donateb} alt='donateb' /></button>
       </div>
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
         <button className='flex justify-center items-center hidden lg:block  '> <img className=" h-[43px] w-[221px]" src={donate} alt='donate' /></button>
       </div>
-      <hr className="flex justify-center mb-3 hidden lg:block  w-[84%] ml-[6%] mr-[8%] mb-14 border-[1.5px] "></hr>
+      <hr className="flex justify-center items-center mb-3 hidden lg:block  w-[84%] ml-[10%] mr-[10%] mb-14 border-[1.5px] "></hr>
 
 
 

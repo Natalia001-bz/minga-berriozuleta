@@ -1,19 +1,41 @@
+
+import Display from "./Display"
+import { useState } from 'react'
 import logokanji from '/assets/images/kanji.png'
 import logo from '/assets/images/Minga.png'
-import menu from '/assets/images/menu.png'
+// import menu from '/assets/images/menu.png'
 
 
 export default function NavBar() {
+
+  let options = [
+    { to: '/', title: "Home" },
+    { to: '/', title: "Comics" },
+    { to: '/', title: "My Comics" },
+    { to: '/', title: "Favorites" },
+    { to: '/', title: "Logout" }
+  ]
+  const [show, setShow] = useState(false)
   return (
-    <nav className='flex flex-col lg:items-start items-center relative '>
-       
-        <div className='flex h-full w-full justify-between absolute'>
-          <img className='w-17 h-16 mt-6 lg:mt-8 ml-2 lg:ml-10' src={menu} alt='menu'></img>
+    <>
+      {/* sintaxis de ternario */}
+    {/* {show ? <Display options={options}/> : null} */}
+    {/* sintaxis  del operador logico && */}
+    
+          {show && <Display options={options} show={show} setShow={setShow} />}
+
+      <nav className='flex w-full justify-between lg:items-start items-center absolute '>
+        
+       <svg onClick={()=>setShow(!show)} className=" w-16 h-16 mt-4 lg:mt-6 ml-4   text-orange hover:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                
           <div className='flex justify-end'>
-            <img className=' w-[150px] h-[50px] mt-10 mr-2 hidden lg:flex ' src={logo} alt='logo'></img>
-            <img className=' w-[50px]  h-[45px] mt-10 mr-4 lg:mr-10  ' src={logokanji} alt='logo2'></img>
+            <img className=' w-[150px] h-[50px] mt-8 mr-2 hidden lg:flex ' src={logo} alt='logo'></img>
+            <img className=' w-[50px]  h-[45px] mt-8 mr-4 lg:mr-8 ' src={logokanji} alt='logo2'></img>
           </div>
-        </div>
+        
       </nav>
+    </>
   )
 }
