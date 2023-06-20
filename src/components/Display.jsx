@@ -1,5 +1,5 @@
 import Profile from '/public/assets/images/perfil.png'
-
+import {Link as Anchor} from "react-router-dom"
 
 
 export default function Display({ options,show,setShow }) {
@@ -25,8 +25,9 @@ export default function Display({ options,show,setShow }) {
                
             </div>
             {options?.map((each,index)=> 
-           <input type='button' key={index} className="  font-poppins font-bold text-16 w-[358px] my-1 p-2 text-gray-100 hover:bg-white hover:text-orange hover:rounded-lg "value={each.title} /> )}
-           
+            <Anchor key={index} to={each.to} className="w-11/12 my-1 p-2 text-gray-100 hover:bg-white hover:text-[#F472B6] hover:rounded-lg">{each.title}</Anchor> )}
+            
+                    
             </nav>
         </>
     )
