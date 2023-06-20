@@ -2,8 +2,15 @@ import {  useState } from "react"
 import Carousel from "../components/Carousel"
 import Welcome from "../components/Welcome"
 import SignIn from "./SignIn"
+import { useParams } from "react-router-dom"
 
-export default function Index({data}) {
+
+export default function Index({}) {
+  const {manga_id, ch_id, author_id} = useParams()
+  console.log(manga_id)
+  console.log(ch_id)
+  console.log(author_id)
+
   const [changeView, setChangeView] = useState(false)
 
   return (
@@ -17,7 +24,7 @@ export default function Index({data}) {
 <>
 
 <Welcome  changeView={changeView} setChangeView={setChangeView}/>
- <Carousel character_photo ={data[0].character_photo} cover_photo={data[0].cover_photo} name={data[0].name} description={data[0].description}/>
+ <Carousel />
 
  </>
 ))}

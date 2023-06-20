@@ -10,7 +10,8 @@ module.exports = {
           poppins: ['Poppins', 'sans-serif'],
           roboto: ['Roboto', 'sans-serif'],
         },
-        colors: { orange: '#F97316',}
+        colors: { orange: '#F97316', purple:'#4338CA' }
+
         
       },
   },
